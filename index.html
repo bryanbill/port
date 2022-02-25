@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Brian Omondi - Portfolio</title>
 </head>
 
-<body>
+<body class="bg-dark text-white">
+    <main class="px-4 lg:px-12 block">
+        <section id="header">
+            <nav class="flex justify-between h-14 w-100 pt-4 items-center">
+                <button class="rounded-xl h-full border border-white text-dark bg-white w-12">
+                    <span class="font-bold">B.</i>
+                </button>
+                <div class="hidden md:flex w-1/2 justify-evenly">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="md:hidden rounded-xl h-full border border-white w-12">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button class="hidden md:block h-full rounded-xl border border-white w-12 hover:text-yellow">
+                    <i class="fas fa-moon "></i>
+                </button>
+            </nav>
+        </section>
+        <section id="hero" class="px-8 py-4">
 
+        </section>
+    </main>
+
+    <script src="./js/tailwind.config.js"></script>
 </body>
 
 </html>

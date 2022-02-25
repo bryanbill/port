@@ -8,5 +8,8 @@ tailwind.config = {
               "red": "#EC0D13",
             }
         }
+    },
+    content:{
+        
     }
 }
