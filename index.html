@@ -9,10 +9,11 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Brian Omondi - Portfolio</title>
 </head>
 
-<body class="bg-dark text-white">
+<body class="bg-dark text-white" id="body">
     <main class="px-4 lg:px-12 ">
         <section id="header">
             <nav class="flex justify-between h-14 w-full pt-4 items-center">
@@ -27,7 +28,7 @@
                 <button class="md:hidden rounded-xl h-full border border-white w-12">
                     <i class="fas fa-bars"></i>
                 </button>
-                <button class="hidden md:block h-full rounded-xl border border-white w-12 hover:text-yellow">
+                <button onclick="changeTheme()" class="hidden md:block h-full rounded-xl border border-white w-12 hover:text-yellow">
                     <i class="fas fa-sun "></i>
                 </button>
             </nav>
@@ -124,9 +125,25 @@
             </div>
         </section>
 
+        
+
 
     </main>
+    <footer class="h-24 bg-white text-dark">
+        <div class="flex items-center h-full justify-around px-4">
+            <button class="rounded-xl h-1/2 border border-dark  bg-white w-12">
+                <span class="font-bold">B.</i>
+            </button>
+            <div class="flex w-1/2 icons justify-evenly">
+                <i class="fab fa-facebook "></i>
+                <i class="fab fa-instagram "></i>
+                <i class="fab fa-twitter text-red"></i>
+            </div>
+            <div class="hidden md:block font-bold text-center">Designed with <i class="fas fa-love"></i><br> by Bryan Omondi</div>
+        </div>
+    </footer>
 
+    <script src="./js/main.js"></script>
     <script src="./js/tailwind.config.js"></script>
 </body>
 
