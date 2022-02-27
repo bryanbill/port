@@ -1,8 +1,7 @@
 
 const changeTheme = () => {
-    const body = document.getElementById("body");
-    body.classList.toggle("bg-dark");
-    body.classList.toggle("text-white");
+    document.getElementById("projects").classList.toggle("projects");
+    document.documentElement.classList.toggle('dark');
 }
 
 
