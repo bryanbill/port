@@ -17,8 +17,8 @@ This is the repository housing my personal website portfolio.
 
 
 ## Screenshots
-
-![App Screenshot](./screenshot.png)
+![App Screenshot](./assets/dark.png)
+![App Screenshot](./assets/light.png)
 
 ## Authors
 - Brian Omondi
