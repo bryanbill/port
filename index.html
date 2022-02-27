@@ -40,8 +40,8 @@
             <div class="flex items-center justify-evenly h-full flex-col md:flex-row">
                 <div class="w-full md:w-1/2 h-1/2">
                     <div class="flex flex-col items-start justify-evenly h-full">
-                        <h1 class="animate__bounceInLeft text-3xl font-bold">Hi, I'm <span class="text-red">Brian</span> I'm a Full Stack Web Developer from Nairobi</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id odit nisi quo asperiores possimus pariatur architecto aperiam soluta natus sint sequi officiis magni tempore mollitia maiores, maxime ea sit nihil.</p>
+                        <h1 class="animate__bounceInLeft text-3xl font-bold">Hi, I'm <span class="text-red">Brian Omondi</span> I'm a Full Stack Web Developer from Nairobi</h1>
+                        <p>I am an experienced Full Stack Software Developer with 4 years of experience in making great products</p>
                         <button class=" rounded-xl border border-white text-yellow h-20 sm:h-12 w-32">
                             <span class="font-bold">Download CV</i></span>
                         </button>
@@ -60,20 +60,52 @@
                 </h1>
             </div>
             <div class="flex flex-col md:flex-row h-3/4 w-full justify-between ">
-                <div class="shadow-lg h-full w-full flex justify-center items-center md:w-3/4 bg-gray-200 dark:bg-gray-800">
-                    <img class="inherit h-1/2" src="./assets/kakashi.png">
-                </div>
+              <div class="h-full">
+                <a class="no-underline" href="https://github.com/bryanbill/soloo">
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 h-full">
+                        <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="./assets/soloo.png" alt="" width="384" height="512">
+                        <div class="flex flex-col justify-center pt-6 md:p-8 text-center md:text-left space-y-4">
+                          <blockquote>
+                            <p class="text-lg font-medium">
+                              “Soloo is a Baas, PaaS service that aims at easing of building of backend applications by
+                              providing cutting edge solutions to common problems realised while building such applications
+                              ”
+                            </p>
+                          </blockquote>
+                          <figcaption class="font-medium">
+                            <div class="text-sky-500 dark:text-sky-400">
+                              Soloo
+                            </div>
+                            <div class="text-slate-700 dark:text-slate-500">
+                              Typescript, NodeJs, CockroachDB
+                            </div>
+                          </figcaption>
+                        </div>
+                      </figure>
+                   </a>
+              </div>
                 <div class="h-full w-full md:w-1/4  flex flex-row md:flex-col">
                     <div class="h-full md:h-1/2 w-1/2 md:w-full md:pb-1 md:pl-1 pr-0.5 pt-1 md:pt-0">
-                        <div class="flex justify-center items-center bg-gray-300 dark:bg-gray-700 h-full">
-                            <img class="h-1/2" src="./assets/kakashi.png">
+                       <a class="no-underline" href="https://github.com/bryanbill/burgers">
+                        <div class="flex flex-col justify-evenly items-center bg-gray-300 dark:bg-gray-700 h-full">
+                            <img class="h-1/2" src="./assets/burger.png">
+                            <div class="text-xl font-bold">
+                                Burger Place
+                                </div>
                         </div>
+                       </a>
+                       
                     </div>
                     <div
                         class="h-full md:h-1/2 w-1/2 md:w-full md:h-1/2 w-1/2 md:w-full md:pt-1 md:pl-1 pl-0.5 pt-1 md:pt-0">
-                        <div class="flex justify-center items-center bg-gray-500 h-full">
-                            <img class="h-1/2" src="./assets/kakashi.png">
-                        </div>
+                        <a class="no-underline" href="https://github.com/bryanbill/showtime">
+                            <div class="flex flex-col justify-evenly items-center bg-gray-300 dark:bg-gray-700 h-full">
+                                <img class="h-1/2" src="./assets/showtime.png">
+                                <div class="text-xl font-bold">
+                                  Showtime
+                                    </div>
+                            </div>
+                           </a>
                     </div>
                 </div>
             </div>
@@ -133,8 +165,8 @@
                 <h1 class="text-4xl font-bold text-gray-500">&lt;Contacts&gt;
                 </h1>
             </div>
-            <div class="flex flex-col md:flex-row w-full space-x-4">
-                <div class="flex flex-col justify-start items-center">
+            <div class="flex flex-col md:flex-row w-full space-x-4 space-y-4">
+                <div class="flex flex-col justify-center items-center">
                     <div class="font-bold text-2xl">Hire me <br> For your Next Project</div>
                     <div class="flex w-1/2 icons justify-evenly ">
                         <i class="fab fa-facebook text-gray-200"></i>
@@ -142,9 +174,15 @@
                         <i class="fab fa-twitter text-red"></i>
                     </div>
                 </div>
-                <div class="flex flex-col items-center flex-grow border-l-2 border-red shadow-inner-lg bg-white">
+                <div class="flex flex-col items-center flex-grow border-l-2 border-red shadow-inner-lg bg-white px-8 py-4 space-y-4">
                     <div class="text-2xl font-bold text-dark">Contact Form</div>
-                    <input class="input rounded-lg border-gray-800" placeholder="Name">
+                    <label for="name" class="text-gray-500 text-left">Name</label>
+                    <input class="w-full input rounded-lg border h-12 border-gray-800 focus:border-red" placeholder="Name">
+                    <label for="email" class="text-gray-500 text-left">Email</label>
+                    <input class="w-full input rounded-lg border h-12 border-gray-800" placeholder="Email">
+                    <label for="message" class="text-gray-500 text-left">Message</label>
+                    <textarea class="w-full input rounded-lg border h-32 border-gray-800" placeholder="Message"></textarea>
+                    <button class="w-full bg-red text-white rounded-lg h-12">Send</button>
                 </div>
             </div>
         </section>
@@ -159,7 +197,7 @@
                 <span class="font-bold">B.</i>
             </button>
             
-            <div class="hidden md:block font-bold text-center">Designed with <i class="fas fa-heart text-red"></i><br> by Bryan Omondi</div>
+            <div class="hidden md:block font-bold text-center">Designed with <i class="fas fa-heart text-red"></i><br> by Brian Omondi</div>
         </div>
     </footer>
 
